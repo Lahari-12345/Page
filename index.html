@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head><title>Sample page</title></head>
-<body>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sample page</title>
 <style>
+body{
+		margin:0;
+		padding:0;
+		overflow-x:hidden;
+}
+@media screen and (min-width:300px) and (max-width:1500px){
 .div1{
 		display:flex;
 		align-items:center;
@@ -53,8 +60,8 @@
 }
 .three{
 		font-size:50px;
-		margin-top: -100px;
-		margin-bottom: -50px;
+		margin-top: 0;
+		margin-bottom: 0px;
 		padding-left:50px;
 }
 .four{
@@ -65,7 +72,7 @@
 .five{
 		padding-left:50px;
 		font-size:24px;
-		margin-top: -100px;
+		margin-top: 0px;
 }
 .six{
 	width: 290px;
@@ -87,7 +94,7 @@ img{
 		padding: 45px 120px;	
 		margin:0;
 		width:300px;
-		height:300px;
+		height:auto;
 		
 }
 .eight{
@@ -98,10 +105,14 @@ img{
 }
 .text{
 	flex:1;
+}		
 }
 </style>
+</head>
+<body>
 <div class="div1">
 <b class="b1">hotjar</b>
+<form>
 <button class="ex" type="submit">Product Tour</button>
 <button class="ex" type="submit">Pricing</button>
 <button class="ex" type="submit">Testimonials</button>
@@ -109,6 +120,7 @@ img{
 <button class="ex" type="submit">Support</button>
 <button class="one" type="submit">Sign up free </button>
 <button class="two" type="submit">Sign in</button>
+</form>
 </div>
 <div class="div2">
 <div class="text">
@@ -123,7 +135,7 @@ img{
 <p class="five">
 Everything your team needs to uncover insights<br> and make right changes.</p>
 <button class="six" type="submit">Sign up for free</button>
-<p class="seven">Create a BASIC account,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;it's free,forever. </p>
+<p class="seven">Create a BASIC account,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;it's free, forever. </p>
 </div>
 <p class="eight">Trusted over 350,000 organizations across 184 countries.</p>
 </body>
