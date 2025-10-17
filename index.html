@@ -8,28 +8,32 @@ body{
 		margin:10px;
 		padding:10px;
 }
-@media screen and (min-width:300px) and (max-width:1500px){
+/* @media screen and (min-width:300px) and (max-width:1500px){ */
 .div1{
 		display:flex;
 		align-items:center;
 		gap:10px;
+		max-width: 1152px;
+		margin: auto;
 }
 .div2{
 		display:flex;
-		align-items:center;
 		gap:20px;
+		/* padding: 0 100px; */
 }
 .div3{
 		display:flex;
 		flex-direction:column;
 		padding:0px;
 		margin:0;
+		gap: 24px;
+		/* padding: 0 100px; */
 }
 .b1{
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:35px;
-	padding-right:200px;
-	margin-left:30px;
+	/* padding-right:200px; */
+	/* margin-left:30px; */
 }
 .ex{
 		border:none;
@@ -58,7 +62,8 @@ body{
 }
 .three{
 		font-size:45px;
-		padding-left:50px;
+		margin: 0;
+		/* padding-left:50px; */
 }
 .four{
 		background-color:rgb(66, 230, 183);
@@ -66,14 +71,14 @@ body{
 		padding-right:20px;
 }
 .five{
-		padding-left:50px;
+		/* padding-left:50px; */
 		font-size:18px;
 		margin-top: 0px;
 }
 .six{
 	width: 290px;
-    padding-left: 6px;
-    margin-left: 90px;
+    /* padding-left: 6px; */
+    /* margin-left: 90px; */
     height: 40px;
     font-size: 20px;
     border-radius: 40px;
@@ -84,54 +89,112 @@ body{
 }
 .seven{
 		color:gray;
-		padding-left:145px;
+		/* padding-left:145px; */
 }
 img{
-		padding: 45px 120px;	
-		margin:0;
-		width:275px;
-		height:auto;
+	width:275px;
 		
 }
 .eight{
-		padding-left:350px;
+		/* padding-left:350px; */
 		color:gray;
 		font-size:15px;
+		/* padding: 0 100px; */
 }
 .text{
 	flex:1;
-}		
+}	
+.outer-div {
+	max-width: 1152px;
+	margin: auto;
+	margin-top: 50px;
+	display: flex;
+    justify-content: space-between;
+}	
+.text-div {
+	display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+p {
+	margin: 0;
+}
+/* } */
+
+@media screen and (max-width: 1024px) {
+	.btns-form {
+		display: flex;
+	}
+	.div1 {
+		justify-content: space-between;
+	}
+}
+
+@media screen and (max-width:640px) {
+	.btns-form {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 5px;
+	}
+	.ex {
+		border-bottom: 1px solid #666666;
+		width: 100%;
+		text-align: left;
+	}
+	.div1 {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.one {
+		width: 120px;
+	}
+
+	.div3 {
+		align-items: center;
+	}
+	.div2, .outer-div {
+		flex-direction: column-reverse;
+	}
+
 }
 </style>
 </head>
 <body>
-<div class="div1">
-<b class="b1">hotjar</b>
-<form>
-<button class="ex" type="submit">Product Tour</button>
-<button class="ex" type="submit">Pricing</button>
-<button class="ex" type="submit">Testimonials</button>
-<button class="ex" type="submit">Blog</button>
-<button class="ex" type="submit">Support</button>
-<button class="one" type="submit">Sign up free </button>
-<button class="two" type="submit">Sign in</button>
-</form>
-</div>
-<div class="div2">
-<div class="text">
-	<p class="three">
-		<b>The fast & visual way<br>&nbsp;to</b>
-		<b class="four">understand your users</b>
-	</p>
+	<div class="div1">
+		<b class="b1">hotjar</b>
+		<form class="btns-form">
+			<button class="ex" type="submit">Product Tour</button>
+			<button class="ex" type="submit">Pricing</button>
+			<button class="ex" type="submit">Testimonials</button>
+			<button class="ex" type="submit">Blog</button>
+			<button class="ex" type="submit">Support</button>
+			<button class="one" type="submit">Sign up free </button>
+			<button class="two" type="submit">Sign in</button>
+		</form>
 	</div>
-	<img src="https://www.shutterstock.com/image-vector/business-scene-during-meeting-260nw-1933180265.jpg">
-</div>
-<div class="div3">
-<p class="five">
-Everything your team needs to uncover insights<br> and make right changes.</p>
-<button class="six" type="submit">Sign up for free</button>
-<p class="seven">Create a BASIC account,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;it's free, forever. </p>
-</div>
-<p class="eight">Trusted over 350,000 organizations across 184 countries.</p>
+	<div class="outer-div">
+		<div class="text-div">
+			<div class="div2">
+				<div class="text">
+					<p class="three">
+						<b>The fast & visual way<br>to</b>
+						<b class="four">understand your users</b>
+					</p>
+				</div>
+			</div>
+			<div class="div3">
+				<p class="five">
+				Everything your team needs to uncover insights<br> and make right changes.</p>
+				<button class="six" type="submit">Sign up for free</button>
+				<p class="seven">Create a BASIC account,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;it's free, forever. </p>
+			</div>
+			<p class="eight">Trusted over 350,000 organizations across 184 countries.</p>
+		</div>
+		<div>
+			<img src="https://www.shutterstock.com/image-vector/business-scene-during-meeting-260nw-1933180265.jpg">
+		</div>
+	</div>
 </body>
 </html>
